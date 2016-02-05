@@ -1,54 +1,104 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <title>Brianna Mansell</title>
-  </head>
-  <body>
+<head>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<title>Brianna Mansell</title>
+</head>
+<body>
 
-    <div class="side-bar">
+	<div class="side-bar">
 
-      <ul class="container">
-      	<li>
-      		<div class="con-item bri-image">
-      			<div class="con-info">
-      				<h3>Looking for source code? </h3>
-      				<p><a href="https://github.com/bmansell/mygithubpage">View on GitHub</a></p>
-      			</div>
-      		</div>
-        </li>
-      </ul>
+		<ul class="container">
+			<li>
+				<div class="con-item bri-image">
+					<div class="con-info">
+						<h3 class="con-h3">Looking for source code?</h3>
+						<p class="con-para"><a href="https://github.com/bmansell/mygithubpage">View on GitHub</a></p>
+					</div>
+				</div>
+			</li>
+		</ul>
 
-      <div class='menu'>
-        <ul>
-          <li><a href="#about-me">About Me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
+		<div class='menu'>
+			<ul>
+				<li><a href="#about-me">About Me</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#technical-interests">Technical Interests</a></li>
+				<li><a href="https://ca.linkedin.com/in/briannamansell">LinkedIn</a></li>
+			</ul>
+		</div>
 
-    </div>
+	</div>
 
-    <!-- Page Divides Here -->
+	<!-- Page Divides Here -->
 
-    <div class="main-page">
-      <h1>Brianna Mansell</h1>
-      <br>
-      <p>This page is currently undergoing construction!</p>
+	<div class="main-page">
+		<div class="inner-main">
+			<h1>Brianna Mansell</h1>
+			<br>
+			<br>
 
-      <div id='about-me'>
-      </div>
+			<div id='about-me'>
+				<h2>About Me</h2>
 
-      <div id='projects'>
-      </div>
+				<p>I am a Computer Science Co-op Majors Student at the University of Manitoba!
+					Currently I am in my fourth year of study, and am passionate about specialising in Human-Computer Interaction. In addition to this, I have also acquired a minor in psychology as I find that learning about how social sciences and computer technology interrelate helps me to be a more conscious developer.
+					<br>
+					<br>
+					This term I am excited to get the chance to compete in the <a href="http://csgames.org/2016/en/">CS Games</a>, as well as being a mentor to guide new Computer Science Co-op students within the program.
+				</p>
+			</div>
 
-      <div id='contact'>
-      </div>
-    </div>
+			<br><hr><br>
 
-    <!-- JS -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="app.js"></script>
-  </body>
+			<div id='projects'>
+				<h2>Projects</h2>
+
+				<table>
+					<tr>
+						<td><a href="https://github.com/bmansell/partEZ">
+								<div class="proj-image" style="background-image: url(img/partez.jpg);"></div>
+							</a>
+						</td>
+						<td>
+							This is a project in progress for my Software Engineering II class. The partEz app will be used to plan, organize, share, and otherwise document parties, socials, get-togethers, gatherings, and other various events. Users will be able to fully plan a party or event and will be able to keep attendees updated on announcements and changes in plans.
+						</td>
+					</tr>
+
+					<tr>
+						<td><div class="proj-image" style="background-image: url(img/board.jpg);"></div></td>
+						<td>
+							This is my own personal project. In 1991, my great-grandfather decided to make his own board game about major league baseball. My task is to recreate this game in Unity so that it may be preserved as such, while gaining practice developing my own game!
+						</td>
+					</tr>
+				</table>
+			</div>
+
+			<br><hr><br>
+
+			<div id='technical-interests'>
+				<h2>Technical Interests</h2>
+
+				<table>
+					<tr>
+						<td><img class="int-image" src="img/database.png"/></td>
+						<td><h3>Databases</h3></td>
+						<td><img class="int-image" src="img/softeng.png"/></td>
+						<td><h3>Software Engineering</h3></td>
+					</tr>
+					<tr>
+						<td><img class="int-image" src="img/hci.png"/></td>
+						<td><h3>Human-Computer Interaction</h3></td>
+						<td><img class="int-image" src="img/graphics.png"/></td>
+						<td><h3>Graphic Design</h3></td>
+					</tr>
+				</table>
+			</div>
+
+		</div>
+	</div>
+
+
+</body>
 </html>
