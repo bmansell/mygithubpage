@@ -1,57 +1,11 @@
-/* Initial body */
+/*** Overall Body ***/
 
 body {
 	background-color: whitesmoke;
 	font-family: 'Montserrat', Arial, sans-serif;
 }
 
-#side-bar {
-	position: fixed;
-	background-color: rgb(0,88,92);
-	height: 100%;
-	width: 25%;
-	min-width: 280px;
-	top: 0px;
-	left: 0px;
-	padding-right: 0px;
-    padding-left: 0px;
-}
-
-/***Window Resized Menu****/
-
-.small-menu {
-	display: none;
-}
-
-#bs-navbar-collapse-1 {
-	width: 100%;
-}
-
-.navbar-header,  #bs-navbar-collapse-1, #bs-navbar-collapse-1 a {
-    background-color: rgb(0,88,92);
-    border-color: #e7e7e7;
-	color: white;
-}
-
-.navbar-brand  hover  {
-	color: white;
-}
-
-.navbar-default, .navbar-brand{
-	background-color: rgb(0,88,92);
-	background-image: none;
-	color: white;
-}
-
-.navbar-default .navbar-brand {
-	color: white;
-}
-
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: white;
-}
-
-/***Main Page and Inner Div****/
+/*** Main Page and Inner Div ****/
 
 #main-page {
 	position: absolute;
@@ -78,7 +32,72 @@ body {
 	padding-right: 100px;
 }
 
-/***Menu****/
+#footer {
+	padding: 30px 50px 50px 0px; 
+}
+
+#footer p {
+	font-size: 14px;
+	color: lightgrey;
+}
+
+/*** Responsive Menu Navbar for Smaller Screens ***/
+/* Uses a bootstrap template */
+
+.small-menu {
+	display: none;
+}
+
+.navbar-collapse {
+    padding-left: 0px;
+ }
+
+ .nav>li>a {
+    padding: 15px 0px 15px 0px;
+    margin-right: 20px;
+}
+
+.navbar-header,  #bs-navbar-collapse-1, #bs-navbar-collapse-1 a {
+    background-color: rgb(0,88,92);
+    border-color: #e7e7e7;
+	color: white;
+}
+
+.navbar-brand  hover  {
+	color: white;
+}
+
+.navbar-default, .navbar-brand{
+	background-color: rgb(0,88,92);
+	background-image: none;
+	color: white;
+}
+
+.navbar-default .navbar-brand {
+	color: white;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+#container-navbar {
+	margin-left: 35px;
+}
+
+/*** Normal Sidebar Menu ****/
+
+#side-bar {
+	position: fixed;
+	background-color: rgb(0,88,92);
+	height: 100%;
+	width: 25%;
+	min-width: 280px;
+	top: 0px;
+	left: 0px;
+	padding-right: 0px;
+    padding-left: 0px;
+}
 
 .menu {
 	padding-top: 100px;
@@ -109,7 +128,12 @@ body {
 	color: black;
 }
 
-/***Body Section Details***/
+/*** Body Section Details ***/
+
+h1, h2, h3, h1, h2, h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
 .proj-image {
 	display: inline-block;
@@ -126,22 +150,22 @@ body {
 	display: inline-block;
 	width: 50px;
 	height: 50px;
-	padding-right:15px;
-	padding-bottom:15px;
+	padding: 10px 10px 10px 10px;
 
 }
 
 .table td tr {
-	vertical-align:center;
+	vertical-align: center;
 }
 
 #technical-interests table {
 	width:100%;
-	padding: 30px 30px 30px 30px;
-	margin-bottom: 50px;
+	padding: 35px 35px 35px 35px;
+	margin-bottom: 30px;
 }
 
-/***Profile Picture Bubble***/
+/*** Profile Picture Bubble ***/
+/* Source - http://tympanus.net/codrops/2012/08/08/circle-hover-effects-with-css-transitions/ */
 
 .bubble-container {
 	margin: 20px 0 0 0;
@@ -254,6 +278,8 @@ body {
 	opacity: 1;
 }
 
+/*** Conditional Screen Sizing Attributes ***/
+
 @media (max-width: 900px) {
     
 	#side-bar {
@@ -281,6 +307,23 @@ body {
 	.small-menu {
 		display: block;
 	}
+}
+
+@media (max-width: 768px) {
+
+	.navbar-collapse {
+    	padding-left: 15px;
+ 	}
+
+ 	 .nav>li>a {
+	    padding: 15px 15px 15px 50px;
+	    margin-right: 0px;
+	}
+
+ 	#container-navbar {
+		margin-left: 0px;
+	}
+
 }
 
 @media (max-width: 400px) {
