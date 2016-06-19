@@ -1,0 +1,16 @@
+.header {
+	text-align: left;
+	color: #008a96;
+	font-family: 'Amaranth', sans-serif;
+	font-size: 62px;
+}
+
+.row-heading {
+	padding-top: 10px;
+}
+
+img {
+	padding-top:10px;
+	margin: auto;
+	display: block;
+}
