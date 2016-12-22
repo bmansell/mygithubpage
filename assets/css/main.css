@@ -50,6 +50,10 @@ a:hover {
     border: 1px solid silver;
 }
 
+.thumbnail {
+    padding-right: 20px;
+}
+
 .carousel-indicators {
   display:none;
 }
